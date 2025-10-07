@@ -1,19 +1,14 @@
 
-/* CONTACT PAGE STYLES */
-
 .contact-page-content {
-    /* Uses the same overall content wrapper style as the about page */
     padding: 50px 0 100px 0;
-    /* Ensures minimum height for content above the simplified footer */
     min-height: calc(100vh - 150px); 
 }
 
 .contact-container {
-    /* Desktop two-column layout */
     max-width: 75vw; 
     margin: 0 auto;
     display: flex;
-    gap: 5vw; /* Space between the form and details columns */
+    gap: 5vw; 
     align-items: flex-start;
 }
 
@@ -22,7 +17,7 @@
 
 
 .contact-form-card {
-    flex: 0 0 45%; /* Fix width of the form column */
+    flex: 0 0 45%; 
     background-color: var(--color-light-green); 
     padding: 40px;
     border-radius: 20px; 
@@ -32,11 +27,11 @@
 
 .contact-form-card label {
     display: block;
-    font-weight: 700;
+    font-weight: 400; 
     font-size: 1.1em;
     margin-top: 15px;
     margin-bottom: 5px;
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     font-family: 'Montserrat', sans-serif; 
 }
 
@@ -44,21 +39,29 @@
 .contact-form-card input[type="email"],
 .contact-form-card textarea {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 0; 
     margin-bottom: 15px;
     border: none;
-    border-bottom: 2px solid var(--color-medium-green);
+    border-bottom: 2px solid var(--color-medium-green); 
     background-color: transparent;
-    color: var(--color-dark-green);
+    color: var(--color-dark-green); 
     font-size: 1em;
     outline: none;
     transition: border-bottom-color 0.3s;
     font-family: 'Montserrat', sans-serif; 
+    
+    /* Hides the arrows/scrollbar that appear when height is fixed */
+    overflow: hidden; 
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+    color: var(--color-medium-green); 
 }
 
 .contact-form-card textarea {
     resize: none;
-    height: 100px; 
+    height: 30px; 
 }
 
 .file-attach-area {
@@ -66,13 +69,12 @@
     justify-content: flex-end;
     align-items: center;
     font-size: 0.9em;
-    color: var(--color-dark-green);
+    color: var(--color-dark-green); 
     margin-top: 5px; 
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Styling the image icon for attaching files */
 .attach-icon {
     height: 30px; 
     width: 30px;  
@@ -98,7 +100,7 @@
 }
 
 
-/* RIGHT SIDE: CONTACT DETAILS STYLES  */
+/*  RIGHT SIDE: CONTACT DETAILS STYLES */
 
 
 .contact-details {
@@ -110,7 +112,7 @@
     font-family: 'Montserrat', sans-serif; 
     font-size: 1.1em;
     font-weight: 400;
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     margin-bottom: 5px;
 }
 
@@ -118,7 +120,7 @@
     font-family: 'Montserrat', sans-serif; 
     font-size: 3.5em;
     font-weight: 400;
-    color: var(--color-black);
+    color: var(--color-black); 
     display: flex;
     align-items: center;
     line-height: 1;
@@ -130,7 +132,6 @@
     margin-left: 10px;
 }
 
-/* The decorative line under the word "CONTACT" */
 .contact-heading::after {
     content: '';
     display: block;
@@ -145,7 +146,7 @@
     font-family: 'Montserrat', sans-serif; 
     font-size: 1.1em;
     line-height: 1.6;
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     max-width: 400px;
     margin-bottom: 30px;
 }
@@ -155,7 +156,7 @@
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 10px;
-    color: var(--color-dark-green);
+    color: var(--color-black); 
 }
 
 .social-icons a img {
@@ -169,14 +170,15 @@
     font-family: 'Hedvig Letters Serif', serif; 
     font-size: 1em;
     line-height: 1.8;
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     margin-top: 20px;
 }
 
 .contact-info a {
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     text-decoration: underline;
 }
+
 
 /* SIMPLE FOOTER STYLES (Policy/Copyright)  */
 
@@ -185,12 +187,11 @@
     text-align: center; 
     padding: 40px 0 10px 0; 
     font-size: 1em; 
-    color: var(--color-dark-green); 
 }
 
 .policy-link {
     margin: 0 10px;
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     text-decoration: none;
     font-family: 'Montserrat', sans-serif; 
 }
@@ -198,7 +199,7 @@
 .copyright-text {
     text-align: center; 
     font-size: 0.8em; 
-    color: var(--color-dark-green);
+    color: var(--color-black); 
     padding-bottom: 20px;
     font-family: 'Montserrat', sans-serif; 
 }
@@ -208,7 +209,6 @@
 
 @media (max-width: 600px) {
     .contact-container {
-        /* Changes to a single column stack */
         flex-direction: column;
         max-width: 90%;
         gap: 40px; 
@@ -223,7 +223,7 @@
 
     .contact-details {
         padding: 0;
-        text-align: center; /* Center content on mobile */
+        text-align: center; 
     }
 
     .contact-heading {
@@ -232,7 +232,7 @@
     }
     
     .contact-heading::after {
-        display: none; /* Hide the line */
+        display: none; 
     }
 
     .contact-subtext {
