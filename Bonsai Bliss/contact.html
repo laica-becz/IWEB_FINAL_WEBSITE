@@ -53,10 +53,10 @@
                     <label for="message">MESSAGE</label>
                     <textarea id="message" name="message" placeholder="Type here"></textarea>
                     
-                    <div class="file-attach-area">
+                    <div class="file-attach-area" id="attach-files-trigger">
                         <img src="attach.png" alt="Attach File Icon" class="attach-icon">
                         <span class="attach-text">Attach files</span>
-                        <input type="file" name="files" multiple style="display: none;">
+                        <input type="file" id="file-upload" name="attached_files" multiple hidden>
                     </div>
 
                     <button type="submit" class="submit-button">SUBMIT</button>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="contact-info">
-                    <p><strong>Email:</strong> bonsaibliss@gmail.com</p>
+                    <p><strong>Email:</strong> bonsaiabliss@gmail.com</p>
                     <p><strong>Phone:</strong> +639999139912</p>
                     <p><strong>Link of our group page:</strong> <a href="http://www.www.com">www.www.com</a></p>
                 </div>
@@ -94,7 +94,20 @@
         </p>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+         document.addEventListener('DOMContentLoaded', function() {
+            // Interactive File Upload Script 
+            const fileUploadInput = document.getElementById('file-upload');
+            // This targets the DIV you just gave the ID to
+            const attachFilesTrigger = document.getElementById('attach-files-trigger'); 
+
+            if (fileUploadInput && attachFilesTrigger) {
+                // Attach the click handler to the entire div area
+                attachFilesTrigger.addEventListener('click', function() {
+                    fileUploadInput.click();
+                });
+            }
+
+            //  Mobile Menu Toggle Script 
             const menuToggle = document.querySelector('.menu-toggle-icon');
             const header = document.querySelector('header');
 
@@ -103,6 +116,7 @@
                     header.classList.toggle('menu-active');
                 });
             }
+
         });
     </script>
 </body>
