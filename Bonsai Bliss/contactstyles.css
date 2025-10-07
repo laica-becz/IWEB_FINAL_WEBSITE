@@ -1,7 +1,7 @@
 
 .contact-page-content {
-    padding: 50px 0 100px 0;
-    min-height: calc(100vh - 150px); 
+    /* INCREASE THE BOTTOM PADDING TO PUSH THE FOOTER DOWN */
+    padding: 50px 0 50px 0;
 }
 
 .contact-container {
@@ -12,9 +12,29 @@
     align-items: flex-start;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Leaf image layer */
+    background-image: url('leafblend.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    /* OPACITY OF THE LEAF IMAGE TO BLEND NICELY WITH THE PAPER TEXTURE */
+    opacity: 0.15; 
+    /* Use mix-blend-mode to blend the leaf layer with the paper texture */
+    mix-blend-mode: multiply; 
+    z-index: -1; 
+}
 
-/* LEFT SIDE: CONTACT FORM CARD STYLES  */
 
+
+/*  LEFT SIDE: CONTACT FORM CARD STYLES  */
 
 .contact-form-card {
     flex: 0 0 45%; 
@@ -49,8 +69,7 @@
     outline: none;
     transition: border-bottom-color 0.3s;
     font-family: 'Montserrat', sans-serif; 
-    
-    /* Hides the arrows/scrollbar that appear when height is fixed */
+    /*  Hides the arrows/scrollbar on the textarea */
     overflow: hidden; 
 }
 
@@ -100,7 +119,7 @@
 }
 
 
-/*  RIGHT SIDE: CONTACT DETAILS STYLES */
+/*  RIGHT SIDE: CONTACT DETAILS STYLES  */
 
 
 .contact-details {
@@ -128,7 +147,7 @@
 }
 
 .contact-heading .us-text {
-    color: var(--color-dark-green); 
+    color: var(---color-black); 
     margin-left: 10px;
 }
 
@@ -180,13 +199,12 @@
 }
 
 
-/* SIMPLE FOOTER STYLES (Policy/Copyright)  */
-
-
+/* FOOTER LINKS/COPYRIGHT STYLES */
 .footer-links {
     text-align: center; 
     padding: 40px 0 10px 0; 
     font-size: 1em; 
+    margin-top: 200px;
 }
 
 .policy-link {
@@ -205,7 +223,17 @@
 }
 
 
-/*  MOBILE STYLES (RESPONSIVE)  */
+/* --- TABLET STYLES (Max width 1024px) --- */
+
+@media (max-width: 1024px) {
+    /* NEW FIX: Moderate space for tablets */
+    .footer-links {
+        margin-top: 100px; 
+    }
+}
+
+
+/* MOBILE STYLES (RESPONSIVE) */
 
 @media (max-width: 600px) {
     .contact-container {
@@ -237,12 +265,27 @@
 
     .contact-subtext {
         max-width: 100%;
-        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
     }
 
     .social-follow h2,
     .social-icons,
     .contact-info p {
         text-align: center;
+    }
+    
+    /*  Reset the large margin used for desktop separation */
+    .footer-links {
+        margin-top: 30px; 
+        padding: 20px 0 10px 0;
+    }
+    
+    /* Ensure the entire footer section doesn't have excess padding on mobile */
+    .footer-links {
+        padding: 20px 0 10px 0;
+    }
+
+    .policy-link {
+        margin: 0;
     }
 }
