@@ -1,28 +1,31 @@
-/* ========================================= */
-/* --- CONTACT PAGE STYLES --- */
-/* ========================================= */
+
+/* CONTACT PAGE STYLES */
 
 .contact-page-content {
-    /* Uses the same vertical padding structure as the About page content */
+    /* Uses the same overall content wrapper style as the about page */
     padding: 50px 0 100px 0;
-    min-height: calc(100vh - 50px);
+    /* Ensures minimum height for content above the simplified footer */
+    min-height: calc(100vh - 150px); 
 }
 
 .contact-container {
-    max-width: 75vw; /* Slightly less wide than about page for form prominence */
+    /* Desktop two-column layout */
+    max-width: 75vw; 
     margin: 0 auto;
     display: flex;
-    gap: 5vw; /* Space between the form and details */
+    gap: 5vw; /* Space between the form and details columns */
     align-items: flex-start;
 }
 
-/* --- LEFT SIDE: CONTACT FORM --- */
+
+/* LEFT SIDE: CONTACT FORM CARD STYLES  */
+
 
 .contact-form-card {
     flex: 0 0 45%; /* Fix width of the form column */
     background-color: var(--color-light-green); 
     padding: 40px;
-    border-radius: 20px; /* Highly rounded corners */
+    border-radius: 20px; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -34,6 +37,7 @@
     margin-top: 15px;
     margin-bottom: 5px;
     color: var(--color-dark-green);
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .contact-form-card input[type="text"],
@@ -49,11 +53,7 @@
     font-size: 1em;
     outline: none;
     transition: border-bottom-color 0.3s;
-}
-
-.contact-form-card input:focus,
-.contact-form-card textarea:focus {
-    border-bottom-color: var(--color-dark-green);
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .contact-form-card textarea {
@@ -67,14 +67,17 @@
     align-items: center;
     font-size: 0.9em;
     color: var(--color-dark-green);
-    margin-top: -10px; /* Pull up to sit under the message box */
+    margin-top: 5px; 
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif; 
 }
 
-.attach-text::before {
-    /* Placeholder for the paperclip icon */
-    content: "\1F4CE"; 
+/* Styling the image icon for attaching files */
+.attach-icon {
+    height: 30px; 
+    width: 30px;  
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 .submit-button {
@@ -91,18 +94,20 @@
     font-size: 1em;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif; 
 }
 
-/* --- RIGHT SIDE: CONTACT DETAILS --- */
+
+/* RIGHT SIDE: CONTACT DETAILS STYLES  */
+
 
 .contact-details {
-    flex: 1; /* Takes up the remaining space */
+    flex: 1; 
     padding: 20px 0;
 }
 
 .query-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
     font-size: 1.1em;
     font-weight: 400;
     color: var(--color-dark-green);
@@ -110,7 +115,7 @@
 }
 
 .contact-heading {
-    font-family: 'Hedvig Letters Serif', serif;
+    font-family: 'Montserrat', sans-serif; 
     font-size: 3.5em;
     font-weight: 400;
     color: var(--color-black);
@@ -125,6 +130,7 @@
     margin-left: 10px;
 }
 
+/* The decorative line under the word "CONTACT" */
 .contact-heading::after {
     content: '';
     display: block;
@@ -136,7 +142,7 @@
 }
 
 .contact-subtext {
-    font-family: 'Inria Serif', serif;
+    font-family: 'Montserrat', sans-serif; 
     font-size: 1.1em;
     line-height: 1.6;
     color: var(--color-dark-green);
@@ -145,7 +151,7 @@
 }
 
 .social-follow h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Hedvig Letters Serif', serif; 
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 10px;
@@ -156,11 +162,11 @@
     height: 30px;
     width: 30px;
     margin-right: 15px;
-    transition: opacity 0.3s;
+    vertical-align: middle;
 }
 
 .contact-info p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Hedvig Letters Serif', serif; 
     font-size: 1em;
     line-height: 1.8;
     color: var(--color-dark-green);
@@ -172,9 +178,37 @@
     text-decoration: underline;
 }
 
-/* --- MOBILE STYLES FOR CONTACT PAGE --- */
+/* SIMPLE FOOTER STYLES (Policy/Copyright)  */
+
+
+.footer-links {
+    text-align: center; 
+    padding: 40px 0 10px 0; 
+    font-size: 1em; 
+    color: var(--color-dark-green); 
+}
+
+.policy-link {
+    margin: 0 10px;
+    color: var(--color-dark-green);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.copyright-text {
+    text-align: center; 
+    font-size: 0.8em; 
+    color: var(--color-dark-green);
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+/*  MOBILE STYLES (RESPONSIVE)  */
+
 @media (max-width: 600px) {
     .contact-container {
+        /* Changes to a single column stack */
         flex-direction: column;
         max-width: 90%;
         gap: 40px; 
@@ -182,14 +216,14 @@
     }
 
     .contact-form-card {
-        flex: 0 0 auto; /* Allow form to take full width */
+        flex: 0 0 auto; 
         padding: 20px;
         border-radius: 10px; 
     }
 
     .contact-details {
         padding: 0;
-        text-align: center; /* Center text on mobile */
+        text-align: center; /* Center content on mobile */
     }
 
     .contact-heading {
@@ -198,7 +232,7 @@
     }
     
     .contact-heading::after {
-        display: none; /* Hide the line on mobile */
+        display: none; /* Hide the line */
     }
 
     .contact-subtext {
@@ -206,16 +240,9 @@
         margin-bottom: 20px;
     }
 
-    .social-follow h2 {
-        text-align: center;
-    }
-    
-    .social-icons {
-        text-align: center;
-    }
-    
+    .social-follow h2,
+    .social-icons,
     .contact-info p {
         text-align: center;
-        margin-top: 10px;
     }
 }

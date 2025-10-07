@@ -7,6 +7,8 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&family=Hedvig+Letters+Serif:wght@400&family=Inria+Serif:ital,wght@1,300&display=swap">
     
+    <link rel="stylesheet" href="aboutstyles.css"> 
+    
     <link rel="stylesheet" href="contactstyles.css"> 
 </head>
 <body>
@@ -21,7 +23,7 @@
                 <li><a href="home.html" class="nav-link">Home</a></li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="styles.html" class="nav-link">Styles</a></li>
-                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li> 
             </ul>
         </nav>
@@ -52,6 +54,7 @@
                     <textarea id="message" name="message" placeholder="Type here"></textarea>
                     
                     <div class="file-attach-area">
+                        <img src="attach.png" alt="Attach File Icon" class="attach-icon">
                         <span class="attach-text">Attach files</span>
                         <input type="file" name="files" multiple style="display: none;">
                     </div>
@@ -68,42 +71,34 @@
                 <div class="social-follow">
                     <h2>Follow us</h2>
                     <div class="social-icons">
-                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                        <a href="#"><img src="fb.png" alt="Facebook"></a>
+                        <a href="#"><img src="insta.png" alt="Instagram"></a>
+                        <a href="#"><a href="#"><img src="youtube.png" alt="YouTube"></a></a>
                     </div>
                 </div>
 
                 <div class="contact-info">
                     <p><strong>Email:</strong> bonsaiabliss@gmail.com</p>
                     <p><strong>Phone:</strong> +639999139912</p>
-                    <p><strong>Link of our group page:</strong> www.www.com</p>
+                    <p><strong>Link of our group page:</strong> <a href="http://www.www.com">www.www.com</a></p>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="designed-bar">
-        <div class="quote-bar">
-            <span class="icon-placeholder">
-                <img src="footer.png" alt="Bonsai Icon">
-            </span>
-            <p class="footer-quote">
-                “The bonsai is not you working on the tree, you have to have the tree work on you.”
-                <span class="quote-author">– John Naka</span>
-            </p>
-            <span class="icon-placeholder">
-                <img src="footer.png" alt="Bonsai Icon">
-            </span>
+        
+        <div class="footer-links">
+            <a href="#" class="policy-link">Privacy Policy</a> 
+            <a href="#" class="policy-link">Terms of Service</a>
         </div>
-    </footer>
+        <p class="copyright-text">
+            @ 2025 Bonsai Bliss. All Rights Reserved.
+        </p>
+    </div>
     <script>
-        // FUNCTIONALITY FOR MOBILE MENU TOGGLE
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle-icon');
             const header = document.querySelector('header');
 
             if (menuToggle && header) {
-                // Toggles the 'menu-active' class on the header when the hamburger icon is clicked
                 menuToggle.addEventListener('click', function() {
                     header.classList.toggle('menu-active');
                 });
