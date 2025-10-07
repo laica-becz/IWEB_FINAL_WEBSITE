@@ -404,6 +404,6 @@ footer {
     }
     
     footer {
-        margin-bottom: 0; /* Remove desktop margin on mobile? */
+        margin-bottom: 0; /* Remove desktop margin on mobile */
     }
 }
