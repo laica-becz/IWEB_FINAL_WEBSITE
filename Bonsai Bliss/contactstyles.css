@@ -1,0 +1,221 @@
+/* ========================================= */
+/* --- CONTACT PAGE STYLES --- */
+/* ========================================= */
+
+.contact-page-content {
+    /* Uses the same vertical padding structure as the About page content */
+    padding: 50px 0 100px 0;
+    min-height: calc(100vh - 50px);
+}
+
+.contact-container {
+    max-width: 75vw; /* Slightly less wide than about page for form prominence */
+    margin: 0 auto;
+    display: flex;
+    gap: 5vw; /* Space between the form and details */
+    align-items: flex-start;
+}
+
+/* --- LEFT SIDE: CONTACT FORM --- */
+
+.contact-form-card {
+    flex: 0 0 45%; /* Fix width of the form column */
+    background-color: var(--color-light-green); 
+    padding: 40px;
+    border-radius: 20px; /* Highly rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.contact-form-card label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: var(--color-dark-green);
+}
+
+.contact-form-card input[type="text"],
+.contact-form-card input[type="email"],
+.contact-form-card textarea {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid var(--color-medium-green);
+    background-color: transparent;
+    color: var(--color-dark-green);
+    font-size: 1em;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+    border-bottom-color: var(--color-dark-green);
+}
+
+.contact-form-card textarea {
+    resize: none;
+    height: 100px; 
+}
+
+.file-attach-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.9em;
+    color: var(--color-dark-green);
+    margin-top: -10px; /* Pull up to sit under the message box */
+    cursor: pointer;
+}
+
+.attach-text::before {
+    /* Placeholder for the paperclip icon */
+    content: "\1F4CE"; 
+    margin-right: 5px;
+}
+
+.submit-button {
+    display: block;
+    width: 150px;
+    padding: 12px 0;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+/* --- RIGHT SIDE: CONTACT DETAILS --- */
+
+.contact-details {
+    flex: 1; /* Takes up the remaining space */
+    padding: 20px 0;
+}
+
+.query-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--color-dark-green);
+    margin-bottom: 5px;
+}
+
+.contact-heading {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 3.5em;
+    font-weight: 400;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.contact-heading .us-text {
+    color: var(--color-dark-green); 
+    margin-left: 10px;
+}
+
+.contact-heading::after {
+    content: '';
+    display: block;
+    width: 60px; 
+    height: 2px;
+    background-color: var(--color-dark-green);
+    margin-left: 15px;
+    margin-top: 10px; 
+}
+
+.contact-subtext {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--color-dark-green);
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.social-follow h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-dark-green);
+}
+
+.social-icons a img {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    transition: opacity 0.3s;
+}
+
+.contact-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--color-dark-green);
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: var(--color-dark-green);
+    text-decoration: underline;
+}
+
+/* --- MOBILE STYLES FOR CONTACT PAGE --- */
+@media (max-width: 600px) {
+    .contact-container {
+        flex-direction: column;
+        max-width: 90%;
+        gap: 40px; 
+        margin: 0 auto;
+    }
+
+    .contact-form-card {
+        flex: 0 0 auto; /* Allow form to take full width */
+        padding: 20px;
+        border-radius: 10px; 
+    }
+
+    .contact-details {
+        padding: 0;
+        text-align: center; /* Center text on mobile */
+    }
+
+    .contact-heading {
+        justify-content: center;
+        font-size: 2.5em;
+    }
+    
+    .contact-heading::after {
+        display: none; /* Hide the line on mobile */
+    }
+
+    .contact-subtext {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-follow h2 {
+        text-align: center;
+    }
+    
+    .social-icons {
+        text-align: center;
+    }
+    
+    .contact-info p {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
