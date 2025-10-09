@@ -210,22 +210,29 @@ body::before {
 
 .social-icons {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     float: none; 
     margin: 0;
+    gap: 30px;
     padding: 0;
 }
 
 
 .social-icons a {
     display: inline-block; 
-    margin: 0 8px; 
+    margin: 0 !important; 
+    padding: 0 !important;
+    line-height: 1;
 }
 
 
 .social-icons a img {
     height: 30px;
     width: 30px;
-    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; 
 }
 
 .contact-info p {
@@ -278,23 +285,28 @@ body::before {
 
 /* MOBILE STYLES (RESPONSIVE) */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contact-container {
-        flex-direction: column;
-        max-width: 90%;
-        gap: 40px; 
         margin: 0 auto;
+        display: block; 
+        width: 100%;
+        padding: 10px;
     }
 
     .contact-form-card {
-        flex: 0 0 auto; 
-        padding: 20px;
-        border-radius: 10px; 
+        max-width: 400px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 
     .contact-details {
-        padding: 0;
-        text-align: center; 
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        text-align: center;
     }
 
     .contact-heading {
