@@ -153,29 +153,41 @@ body::before {
 }
 
 .contact-heading {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
     font-weight: 400;
-    color: var(--color-black); 
-    display: flex;
-    align-items: center;
+    color: var(--color-black);
+    display: inline-block; 
+    align-items: flex-end; 
+    
     line-height: 1;
     margin-bottom: 10px;
+    position: relative; 
 }
+
+.contact-heading .contact-word {
+    position: relative; 
+    margin-right: 8px; 
+    line-height: inherit; 
+}
+
 
 .contact-heading .us-text {
     color: var(---color-black); 
-    margin-left: 10px;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .contact-heading::after {
     content: '';
-    display: block;
-    width: 60px; 
-    height: 2px;
-    background-color: var(--color-dark-green);
-    margin: 10px 0 0 0; 
-
+    width: 100%; 
+    height: 3px;
+    background-color:#000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
 }
 
 .contact-subtext {
@@ -273,19 +285,24 @@ body::before {
 }
 
 
-/* --- TABLET STYLES (Max width 1024px) --- */
+/* TABLET STYLES */
 
 @media (max-width: 1024px) {
-    /* NEW FIX: Moderate space for tablets */
     .footer-links {
         margin-top: 100px; 
     }
 }
 
 
-/* MOBILE STYLES (RESPONSIVE) */
+/* MOBILE STYLES */
 
 @media (max-width: 768px) {
+
+    .contact-heading .contact-word {
+        margin-right: -10px; 
+        position: relative;
+    }
+
     .contact-container {
         margin: 0 auto;
         display: block; 
@@ -329,7 +346,6 @@ body::before {
         text-align: center;
     }
     
-    /*  Reset the large margin used for desktop separation */
     .footer-links {
         margin-top: 30px; 
         padding: 20px 0 10px 0;
