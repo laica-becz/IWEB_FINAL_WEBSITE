@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonsai Bliss Gallery</title>
+  <link rel="stylesheet" href="gallery styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Logo.png" alt="bonsai logo">
+      <span>Bonsai Bliss</span>
+      <img src="menu-burger.png" alt="menu burger">
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" class="active">Gallery</a>
+      <a href="#">Styles</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="menu">&#9776;</button>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <img="search.png" alt="Search Icon" />
+    </div>
+
+    <section class="gallery">
+      <!-- Bonsai Cards -->
+      <div class="card">
+        <img src="bonsai1.png" alt="Hinoki Cypress" />
+        <h3>Hinoki Cypress</h3>
+        <p><em>(Chamaecyparis obtusa)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai2.png" alt="Yamamomiji" />
+        <h3>Yamamomiji</h3>
+        <p><em>(Acer palmatum)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai3.png" alt="Field Maple Bonsai" />
+        <h3>Field Maple Bonsai</h3>
+        <p><em>(Acer campestre)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai4.png" alt="Shore Pine" />
+        <h3>Shore Pine</h3>
+        <p><em>(Pinus contorta)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai5.png" alt="Japanese Black Pine" />
+        <h3>Japanese Black Pine</h3>
+        <p><em>(Pinus thunbergii)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai6.png" alt="Littleleaf Linden" />
+        <h3>Littleleaf Linden</h3>
+        <p><em>(Tilia cordata)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai7.png" alt="Ficus Bonsai" />
+        <h3>Ficus Bonsai</h3>
+        <p><em>(Ficus retusa)</em></p>
+      </div>
+
+      <div class="card">
+        <img src="bonsai8.png" alt="Chinese Elm" />
+        <h3>Chinese Elm</h3>
+        <p><em>(Ulmus parvifolia)</em></p>
+      </div>
+    </section>
+
+    <div class="pagination">
+      <h2>Page 1 of 4</h2>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Privacy Policy &nbsp; | &nbsp; Terms of Service</p>
+  </footer>
+
+  <script>
+    const pages = document.querySelectorAll('.pagination button');
+    pages.forEach(btn => {
+      btn.addEventListener('click', () => {
+    pages.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    alert(`Page ${btn.textContent} clicked!`);
+  });
+});
+
+  </script>
+</body>
+</html>
