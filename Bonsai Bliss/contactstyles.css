@@ -73,6 +73,7 @@ body::before {
     font-family: 'Montserrat', sans-serif; 
 }
 
+/* Input field and textarea styles */
 .contact-form-card input[type="text"],
 .contact-form-card input[type="email"],
 .contact-form-card textarea {
@@ -89,6 +90,7 @@ body::before {
     font-family: 'Montserrat', sans-serif; 
     overflow: hidden; 
 }
+
 
 .contact-form-card input::placeholder,
 .contact-form-card textarea::placeholder {
