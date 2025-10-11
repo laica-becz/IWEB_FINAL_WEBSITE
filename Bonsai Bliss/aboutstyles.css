@@ -43,10 +43,7 @@ body {
 
 /* --- HEADER/NAV STYLES --- */
 header {
-    /* Add margin to move header down from the top of the viewport */
     margin-top: 20px; 
-    
-    /* Background color and z-index are handled by .designed-bar */
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -162,7 +159,7 @@ nav ul {
     opacity: 0.8; 
     z-index: 1; 
     transform: rotate(-180deg);
-    display: block; /* Explicitly visible for desktop/tablet */
+    display: block; 
 }
 
 .about-intro-section,
@@ -193,7 +190,7 @@ nav ul {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 500px;
-    color: var(--color-dark-green); 
+    color: var(--color-black); 
 }
 
 .button-content {
@@ -244,7 +241,7 @@ nav ul {
     font-family: 'Inria Serif', serif;
     font-size: 1.1em;
     line-height: 1.6;
-    color: var(--color-dark-green); 
+    color: var(--color-black); 
 }
 
 /* --- FOOTER/QUOTE STYLES --- */
@@ -261,7 +258,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--color-dark-green); 
+    color: var(--color-black); 
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px; 

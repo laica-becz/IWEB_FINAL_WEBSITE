@@ -1,21 +1,20 @@
 /* Print CSS - styles applied only when the page is printed */
 @media print {
-    /* HIDE UNNECESSARY ELEMENTS */
-    header, /* Hide navigation and header logos/icons */
+    header, 
     .header-icons,
     nav,
-    .leaf-image, /* Hide the large side image */
+    .leaf-image, 
     .button-content, 
-    .icon-placeholder, /* Hide the footer icons */
-    .footer-quote .quote-author /* Only keep the main quote, author is secondary */
+    .icon-placeholder, 
+    .footer-quote .quote-author 
     {
         display: none !important;
     }
 
     /* GENERAL STYLES */
     body {
-        background: none !important; /* Remove background color/texture */
-        color: #000 !important; /* Ensure all text is black for clarity */
+        background: none !important; 
+        color: #000 !important; 
         font-size: 12pt; 
     }
 
@@ -31,7 +30,6 @@
         padding: 0;
     }
 
-    /* Ensure text flows correctly by removing flex/float from main sections */
     .about-intro-section {
         display: block;
         max-width: 100%;
