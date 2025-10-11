@@ -226,14 +226,14 @@ body::before {
     align-items: center;
     float: none; 
     margin: 0;
-    gap: 30px;
+    gap: 25px;
     padding: 0;
 }
 
 
 .social-icons a {
     display: inline-block; 
-    margin: 0 !important; 
+    margin: 0 2px; 
     padding: 0 !important;
     line-height: 1;
 }
@@ -297,6 +297,29 @@ body::before {
 /* MOBILE STYLES */
 
 @media (max-width: 768px) {
+
+     
+    .contact-heading .contact-word::after {
+        content: "\A"; 
+        white-space: pre; 
+    }
+    
+    .contact-heading .contact-word {
+        text-decoration: underline; 
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px; 
+    }
+    
+    .contact-heading .us-text {
+        text-decoration: underline; 
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px; 
+    }
+
+    .contact-heading::after {
+        display: none !important;
+    }
+
 
     .contact-heading .contact-word {
         margin-right: -10px; 
