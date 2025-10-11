@@ -4,7 +4,7 @@
     --color-medium-green: #819067; 
     --color-light-green: #9CB380; 
     --color-white: #FFFFFF; 
-    --color-black: #000000; 
+    --color-black: #000000;
 }
 
 /* Base Styles */
@@ -25,16 +25,16 @@ body {
     background-color: rgba(230, 230, 230, 0.5); 
 }
 
-/*  HEADER/FOOTER DESIGN OVERRIDE (for Desktop/Tablet look) This centers the header and footer bars and gives them a max-width.*/
+/* HEADER/FOOTER DESIGN OVERRIDE (for Desktop/Tablet look) This centers the header and footer bars and gives them a max-width.*/
 .designed-bar {
     /* LIMIT WIDTH AND CENTER THE BAR */
-    max-width: 95vw; 
+    max-width: 95vw;
     margin-left: auto; 
     margin-right: auto;
     
     /* Apply background and design elements */
     background-color: var(--color-light-green); 
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
     position: relative; 
     z-index: 10;
@@ -46,7 +46,7 @@ header {
     margin-top: 20px; 
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
     padding: 15px 5vw; 
     min-height: 85px; 
     position: relative; 
@@ -56,7 +56,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center; 
-    flex-shrink: 0; 
+    flex-shrink: 0;
     z-index: 30; 
 }
 
@@ -64,7 +64,7 @@ header {
     height: 55px; 
     width: auto; 
     z-index: 20; 
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .logo-text {
@@ -73,14 +73,14 @@ header {
     color: var(--color-black); 
     font-weight: 700; 
     margin-left: 5px; 
-    position: relative; 
+    position: relative;
     top: 0; 
 }
 
 nav {
     flex-grow: 1; 
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -100,7 +100,7 @@ nav ul {
 
 .nav-link.active,
 .nav-link:hover {
-    color: var(--color-white); 
+    color: var(--color-white);
 }
 
 .header-icons {
@@ -108,7 +108,7 @@ nav ul {
     align-items: center;
     flex-shrink: 0;
     margin-left: 30px;
-    color: var(--color-dark-green); 
+    color: var(--color-dark-green);
 }
 
 .header-icons .icon-button {
@@ -117,7 +117,7 @@ nav ul {
     cursor: pointer;
     margin-left: 15px;
     padding: 0;
-    line-height: 0; 
+    line-height: 0;
 }
 
 .header-icons .icon-button img {
@@ -128,7 +128,7 @@ nav ul {
 
 /* Hides the hamburger icon by default (desktop view) */
 .menu-toggle-icon {
-    display: none; 
+    display: none;
 }
 
 /* --- ABOUT PAGE MAIN CONTENT STYLES --- */
@@ -152,14 +152,14 @@ nav ul {
     width: 440px; 
     height: 567px; 
     top: 59px; 
-    right: 5vw; 
+    right: 5vw;
     left: auto; 
     background: url('leavesremovebg.png') no-repeat right top; 
     background-size: contain; 
     opacity: 0.8; 
     z-index: 1; 
     transform: rotate(-180deg);
-    display: block; 
+    display: block;
 }
 
 .about-intro-section,
@@ -182,7 +182,7 @@ nav ul {
     font-size: 3.5em;
     font-weight: 400;
     margin-bottom: 20px;
-    color: var(--color-black); 
+    color: var(--color-black);
 }
 
 .intro-paragraph {
@@ -190,7 +190,7 @@ nav ul {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 500px;
-    color: var(--color-black); 
+    color: var(--color-black);
 }
 
 .button-content {
@@ -234,19 +234,18 @@ nav ul {
     font-size: 2em;
     font-weight: 400;
     margin-bottom: 10px;
-    color: var(--color-black); 
+    color: var(--color-black);
 }
 
 .body-text {
     font-family: 'Inria Serif', serif;
     font-size: 1.1em;
     line-height: 1.6;
-    color: var(--color-black); 
+    color: var(--color-black);
 }
 
 /* --- FOOTER/QUOTE STYLES --- */
 footer {
-    /* Add margin to move footer up from the bottom of the viewport */
     margin-bottom: 20px;
     padding: 40px 0; 
     position: relative;
@@ -272,7 +271,7 @@ footer {
 
 /* FIX: Sets the correct small size for the image icons in the footer */
 .icon-placeholder img {
-    height: 25px; 
+    height: 25px;
     width: 25px;
     vertical-align: middle;
 }
@@ -293,7 +292,7 @@ footer {
     margin-top: 5px;
 }
 
-/*  MEDIA QUERIES FOR RESPONSIVENESS  */
+/* MEDIA QUERIES FOR RESPONSIVENESS  */
 
 /* TABLET LAYOUT (Max width 1024px) */
 @media (max-width: 1024px) {
@@ -306,7 +305,7 @@ footer {
 
     header.designed-bar,
     footer.designed-bar {
-        border-radius: 0; 
+        border-radius: 0;
         box-shadow: none; 
         max-width: 100%; 
         margin: 0; 
@@ -314,34 +313,34 @@ footer {
     
     /* Hide the leaf image  */
     .leaf-image {
-        display: none; 
+        display: none;
     }
     
     header {
-        padding: 15px 3vw; 
+        padding: 15px 3vw;
         min-height: 70px; 
         margin-top: 0; 
     }
     
     .content-container {
-        max-width: 90%; 
+        max-width: 90%;
         margin: 0 auto; 
         padding-left: 0; 
     }
 
     /* Hides the main navigation links by default on mobile */
     nav {
-        display: none; 
+        display: none;
     }
     
     /* Show the hamburger icon */
     .menu-toggle-icon {
-        display: inline-block; 
+        display: inline-block;
     }
 
     /* Mobile Menu Styles when the 'menu-active' class is toggled by JavaScript */
     header.menu-active nav {
-        display: flex; 
+        display: flex;
         position: absolute;
         top: 70px; 
         left: 0;
@@ -380,7 +379,7 @@ footer {
 
     /* Adjust icon size slightly for mobile */
     .header-icons .icon-button img {
-        height: 20px; 
+        height: 20px;
         width: 20px;
     }
     
@@ -401,6 +400,6 @@ footer {
     }
     
     footer {
-        margin-bottom: 0; /* Remove desktop margin on mobile */
+        margin-bottom: 0;
     }
 }
