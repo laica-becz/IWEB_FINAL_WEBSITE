@@ -97,12 +97,13 @@
     const pages = document.querySelectorAll('.pagination button');
     pages.forEach(btn => {
       btn.addEventListener('click', () => {
-    pages.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    alert(`Page ${btn.textContent} clicked!`);
-  });
-});
+        pages.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        alert(`Page ${btn.textContent} clicked!`);
+      });
+    });
 
   </script>
 </body>
 </html>
+
