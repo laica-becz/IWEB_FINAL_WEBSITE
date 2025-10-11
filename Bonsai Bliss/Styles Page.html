@@ -3,83 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonsai Styles</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Bonsai Bliss - Styles Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles Page.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="path_to_logo.png" alt="Bonsai Bliss Logo"> <!-- Replace with actual logo -->
-                Bonsai Bliss
+                <img src="Logo.png" alt="Bonsai Bliss Logo" class="logo-image">
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Styles</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="styles.html">Styles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="search-menu">
-                <a href="#" class="search-icon">
-                    <i class="fa fa-search"></i> <!-- Search icon -->
-                </a>
-                <a href="#" class="menu-icon">
-                    <i class="fa fa-bars"></i> <!-- Hamburger menu -->
-                </a>
+            <div class="nav-icons">
+                <button class="search-icon">
+                    <img src="search.png" alt="Search Icon">
+                </button>
+                <button class="menu-icon">
+                    <img src="menu-burger.png" alt="Menu Icon">
+                </button>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="intro">
+    <main class="container">
+        <section class="hero">
             <h1>Guide to different Bonsai styles</h1>
-            <p>Explore the traditional artistic forms that define bonsai aesthetics. Each style represents a distinct approach to shaping these miniature trees, from upright and formal to cascading and naturalistic. Understanding these classic styles will deepen your appreciation for the artistry and intention behind each bonsai creation.</p>
+            <div class="hero-box">
+                <p class="hero-description">
+                    Explore the traditional artistic forms that define bonsai aesthetics. 
+                    Each style represents a distinct approach to shaping and training trees, 
+                    from structured formal designs to flowing natural expressions. Understanding 
+                    these classic styles will deepen your appreciation for the artistry and intention 
+                    behind each bonsai creation.
+                </p>
+            </div>
         </section>
 
-        <section class="styles">
-            <div class="style-card">
-                <img src="Styles Page/style1.jpg" alt="Broom style Bonsai (Hokkidachi)">
-                <h2>Broom style Bonsai (Hokkidachi)</h2>
-                <p>The Formal Upright style features a straight trunk with balanced branches, emphasizing strength and harmony. Maintain it through regular pruning and wire guiding.</p>
-            </div>
-            <div class="style-card">
-                <img src="Styles Page/style2.jpg" alt="Formal Upright Bonsai style (Chokkan)">
-                <h2>Formal Upright Bonsai style (Chokkan)</h2>
-                <p>The Formal Upright is a common bonsai style found in nature where trees grow in full light without competition. It features a straight trunk with clear tapering.</p>
-            </div>
-            <div class="style-card">
-                <img src="Styles Page/style3.jpg" alt="Informal Upright Bonsai style (Moyogi)">
-                <h2>Informal Upright Bonsai style (Moyogi)</h2>
-                <p>Informal Upright bonsai grows in a gentle S-shape, with branches that curve and a trunk that tapers from thick at the base to thin at the top.</p>
-            </div>
-            <div class="style-card">
-                <img src="Styles Page/style4.jpg" alt="Cascade Bonsai style (Kengai)">
-                <h2>Cascade Bonsai style (Kengai)</h2>
-                <p>Cascade bonsai grows in tall pots, starting upright before bending downward at an angle, with branches alternating along the curves.</p>
-            </div>
-            <div class="style-card">
-                <img src="Styles Page/style5.jpg" alt="Literati Bonsai style (Bunjingi)">
-                <h2>Literati Bonsai style (Bunjingi)</h2>
-                <p>This style grows tall and slender, with branches only at the top, as the tree competes for sunlight in dense forests.</p>
-            </div>
+        <section class="styles-grid">
+            <article class="style-item">
+                <div class="style-image-container">
+                    <img src="Styles Page/style1.jpg" alt="Broom style Bonsai">
+                </div>
+                <div class="style-info">
+                    <h2>Broom style Bonsai (Hokidachi)</h2>
+                    <p>The Formal Upright style features a straight trunk with balanced branches, symbolizing strength and harmony. Maintain it through regular pruning and gentle wiring.</p>
+                </div>
+            </article>
+
+            <article class="style-item">
+                <div class="style-image-container">
+                    <img src="Styles Page/style2.jpg" alt="Formal Upright Bonsai">
+                </div>
+                <div class="style-info">
+                    <h2>Formal Upright Bonsai style (Chokkan)</h2>
+                    <p>The Formal Upright is a common bonsai style found in nature where trees grow in full light without competition. It features a straight trunk with clear tapering.</p>
+                </div>
+            </article>
+
+            <article class="style-item">
+                <div class="style-image-container">
+                    <img src="Styles Page/style3.jpg" alt="Informal upright Bonsai">
+                </div>
+                <div class="style-info">
+                    <h2>Informal upright Bonsai style (Moyogi)</h2>
+                    <p>Informal upright bonsai grow in a gentle S-shape, with branches at each curve and a trunk that tapers from thick at the base to thin at the top.</p>
+                </div>
+            </article>
+
+            <article class="style-item">
+                <div class="style-image-container">
+                    <img src="Styles Page/style4.jpg" alt="Cascade Bonsai">
+                </div>
+                <div class="style-info">
+                    <h2>Cascade Bonsai style (Kengai)</h2>
+                    <p>Cascade bonsai grow in tall pots, starting upright before bending downward in an S-shape, with branches alternating along the curves.</p>
+                </div>
+            </article>
+
+            <article class="style-item">
+                <div class="style-image-container">
+                    <img src="Styles Page/style5.jpg" alt="Literati Bonsai">
+                </div>
+                <div class="style-info">
+                    <h2>Literati Bonsai style (Bunjingi)</h2>
+                    <p>This style grows tall and crooked with branches only at the top, as the tree competes for sunlight in dense forests.</p>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Bonsai Bliss. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
     </footer>
 
-    <!-- JavaScript for mobile menu toggle -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <img src="Styles Page/arrow.png" alt="Scroll to top">
+    </div>
+
     <script>
+        // Mobile menu toggle
         const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('nav ul');
-        
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navLinks.contains(event.target);
+            const isClickOnMenu = menuIcon.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnMenu && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on a link
+        const navItems = document.querySelectorAll('.nav-links a');
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
         });
     </script>
 </body>
