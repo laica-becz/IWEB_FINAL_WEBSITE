@@ -94,16 +94,25 @@
   </footer>
 
   <script>
+    const header = document.querySelector('header');
+    const menuToggle = document.querySelector('.menu-toggle-icon');
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        header.classList.toggle('menu-active');
+      });
+    }
+    
     const pages = document.querySelectorAll('.pagination button');
     pages.forEach(btn => {
       btn.addEventListener('click', () => {
         pages.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        alert(`Page ${btn.textContent} clicked!`);
       });
     });
 
   </script>
 </body>
 </html>
+
 
