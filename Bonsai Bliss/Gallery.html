@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bonsai Bliss Gallery</title>
-  <link rel="stylesheet" href="gallery styles.css" />
+  <link rel="stylesheet" href="Gallery styles.css" />
 </head>
 <body>
   <header class="navbar">
@@ -39,7 +39,7 @@
       <img src="search.png" alt="Search Icon" class="search-icon" />
     </div>
 
-    <section class="gallery">
+   <section class="gallery">
       <div class="card">
         <img src="bonsai1.png" alt="Hinoki Cypress" />
         <h3>Hinoki Cypress</h3>
@@ -98,20 +98,20 @@
     </div>
   </main>
 
-  <footer>
-    <p>Privacy Policy &nbsp; | &nbsp; Terms of Service</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="designed-bar">
+    <p style="text-align:center; margin-top:15px;">Privacy Policy &nbsp; | &nbsp; Terms of Service</p>
   </footer>
 
   <script>
-    const header = document.querySelector('header');
+    // Toggle menu for mobile
     const menuToggle = document.querySelector('.menu-toggle-icon');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('menu-active');
+    });
 
-    if (menuToggle) {
-      menuToggle.addEventListener('click', () => {
-        header.classList.toggle('menu-active');
-      });
-    }
-    
+    // Pagination button highlight
     const pages = document.querySelectorAll('.pagination button');
     pages.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -123,6 +123,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
