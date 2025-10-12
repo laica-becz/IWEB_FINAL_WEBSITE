@@ -1,4 +1,3 @@
-/* COLOR VARIABLES */
 :root {
   --color-dark-green: #455B43; 
   --color-medium-green: #819067; 
@@ -7,7 +6,6 @@
   --color-black: #000000;
 }
 
-/* === General Reset === */
 * {
   margin: 0;
   padding: 0;
@@ -288,6 +286,7 @@ footer {
         box-shadow: none;
     }
 }
+
 
 
 
