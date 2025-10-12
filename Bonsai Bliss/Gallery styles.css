@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 /* === Body === */
@@ -28,12 +27,13 @@ body {
 /* HEADER/FOOTER DESIGN OVERRIDE (for Desktop/Tablet look) This centers the header and footer bars and gives them a max-width.*/
 .designed-bar {
     max-width: 95vw;
-    margin: 20px auto;
+    margin: 10px auto;
     background-color: var(--color-light-green);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 10;
+    padding: 0;
 }
 
 
@@ -42,10 +42,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 3vw;
-    min-height: 65px;
+    padding: 6% 3vw;
+    min-height: 60px;
     width: 100%;
-    margin-top:10px;
+    margin: 0;
 }
 
 .logo-container {
