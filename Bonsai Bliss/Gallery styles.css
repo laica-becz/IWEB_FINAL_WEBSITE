@@ -39,13 +39,11 @@ body {
 
 /* --- HEADER/NAV STYLES --- */
 header {
-    margin-top: 20px; 
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 5vw; 
-    min-height: 85px; 
-    position: relative; 
+    padding: 15px 5vw;
+    min-height: 85px;
     width: 100%;
 }
 
