@@ -192,10 +192,10 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* spacing between text and buttons */
+    gap: 15px; 
     margin: 40px 0;
     text-align: center;
-    flex-wrap: wrap; /* keeps it neat on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .pagination h2 {
@@ -224,13 +224,40 @@ nav ul {
     color: var(--color-black);
 }
 
-
-/* === FOOTER === */
+/* ===== FOOTER ===== */
 footer {
-    margin-bottom: 20px;
-    padding: 40px 0; 
+    background: var(--color-light-green);
+    padding: 20px 0;
+    text-align: center;
+    margin: 20px auto;
     position: relative;
-    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    max-width: 95vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: var(--color-white);
 }
 
 /* === RESPONSIVE STYLES === */
@@ -276,6 +303,7 @@ footer {
         box-shadow: none;
     }
 }
+
 
 
 
