@@ -307,39 +307,107 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .search-bar input {
-        width: 80%;
-    }
-
-    .search-bar .search-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .card img {
-      height: 180px;
-    }
 
     header.designed-bar,
     footer.designed-bar {
         border-radius: 0;
+        box-shadow: none;
         max-width: 100%;
         margin: 0;
-        box-shadow: none;
     }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 5vw;
+        background-color: var(--color-light-green);
+        position: relative;
+        z-index: 100;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .logo-img {
+        height: 55px;  
+        width: auto;
+    }
+
+    .logo-text {
+        font-size: 1.6rem;  
+        font-weight: 700;
+    }
+
+    .menu-toggle-icon {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2.2rem; 
+        cursor: pointer;
+        color: var(--color-black);
+        z-index: 200;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;  
+        left: 0;
+        width: 100%;
+        background-color: var(--color-light-green);
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 15px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        z-index: 150;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: var(--color-black);
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        color: var(--color-white);
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; 
+        padding: 20px 5vw;
+    }
+
+  .scroll-top {
+    width: 45px;
+    height: 45px;
+    right: 15px; 
+    bottom: 60px;
+  }
+  
+  .scroll-top img {
+    width: 20px;
+    height: 20px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
