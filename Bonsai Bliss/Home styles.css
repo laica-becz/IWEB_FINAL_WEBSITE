@@ -30,8 +30,6 @@ body {
     background-color: var(--color-light-green);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 10;
 }
 
 /* HEADER */
@@ -48,13 +46,11 @@ header {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    z-index: 30;
 }
 
 .logo-img {
     height: 55px;
     width: auto;
-    z-index: 20;
     vertical-align: middle;
 }
 
@@ -83,37 +79,32 @@ nav ul {
     color: var(--color-white);
 }
 
-.icon-button{
-    display: none;
-}
-
-/* ICONS */
+/* HEADER ICONS */
 .header-icons {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
     margin-left: 30px;
-    color: var(--color-dark-green);
 }
 
-.header-icons .icon-button {
+.search-icon {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 15px;
     padding: 0;
-    line-height: 0;
 }
 
-.header-icons .icon-button img {
-    height: 25px; 
-    width: 25px;
-    vertical-align: middle;
+.search-icon img {
+    height: 24px;
+    width: 24px;
 }
 
-/* Hide hamburger icon by default */
 .menu-toggle-icon {
     display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-black);
 }
 
 /* MAIN CONTENT */
@@ -205,24 +196,7 @@ footer.designed-bar {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-    main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content {
-        max-width: 90%;
-    }
-
-    .bonsai-img img {
-        width: 350px;
-        margin-top: 2rem;
-    }
-}
-
-/* Tablet View */
+/* TABLET VIEW */
 @media (min-width: 600px) and (max-width: 1024px) {
     main {
         flex-direction: column;
@@ -236,33 +210,24 @@ footer.designed-bar {
     }
 
     .buttons {
-        display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-        margin: 1.5rem auto;
-    }
-
-    .btn {
-        text-align: center;
     }
 
     .bonsai-img {
         margin-top: 2rem;
     }
-    
+
     footer.designed-bar {
         font-size: 0.85rem;
         margin: 30px auto;
     }
 }
 
-/* Mobile View */
+/* MOBILE VIEW */
+/* MOBILE VIEW */
 @media (max-width: 600px) {
 
-    header.designed-bar,
-    footer.designed-bar {
+    .designed-bar {
         border-radius: 0;
         box-shadow: none;
         max-width: 100%;
@@ -276,22 +241,26 @@ footer.designed-bar {
         padding: 12px 5vw;
         background-color: var(--color-light-green);
         position: relative;
-        z-index: 100;
-    }
-
-    .logo-container {
-        display: flex;
-        align-items: center;
-        gap: 8px;
     }
 
     .logo-img {
         height: 40px;
-        width: auto;
     }
 
     .logo-text {
         font-size: 1.4rem;
+    }
+
+    /* Fix: Add spacing between icons on mobile */
+    .header-icons {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* ✅ adds spacing between search & menu icons */
+    }
+
+    .search-icon img {
+        height: 22px;
+        width: 22px;
     }
 
     .menu-toggle-icon {
@@ -301,7 +270,6 @@ footer.designed-bar {
         font-size: 2rem;
         cursor: pointer;
         color: var(--color-black);
-        z-index: 200;
     }
 
     nav {
@@ -316,7 +284,6 @@ footer.designed-bar {
         gap: 12px;
         padding: 15px 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        z-index: 150;
     }
 
     nav.active {
@@ -324,24 +291,40 @@ footer.designed-bar {
     }
 
     nav ul {
-        list-style: none;
-        display: flex;
         flex-direction: column;
         gap: 12px;
-        padding: 0;
-        margin: 0;
     }
 
     .nav-link {
-        text-decoration: none;
-        color: var(--color-black);
         font-weight: 600;
         font-size: 1rem;
-        transition: color 0.3s;
     }
 
-    .nav-link.active,
-    .nav-link:hover {
-        color: var(--color-white);
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    .bonsai-img img {
+        width: 350px;
+        margin-top: 2rem;
+    }
+
+    footer.designed-bar {
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+        position: relative; /* prevents floating */
+        bottom: 0;
+        left: 0;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: var(--color-light-green);
+        font-size: 0.85rem;
+        text-align: center;
     }
 }
