@@ -23,56 +23,39 @@ body {
     background-color: rgba(230, 230, 230, 0.5);
 }
 
-/*  HEADER/FOOTER DESIGN OVERRIDE (for Desktop/Tablet look) This centers the header and footer bars and gives them a max-width.*/
+/* === HEADER & FOOTER CONTAINER === */
 .designed-bar {
-    max-width: 95vw; 
-    margin-left: auto; 
-    margin-right: auto;
-    background-color: var(--light-green); 
-    border-radius: 5px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
-    position: relative; 
+    max-width: 95vw;
+    margin: 20px auto;
+    background-color: var(--color-light-green);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
     z-index: 10;
 }
 
-
-/* --- HEADER/NAV STYLES --- */
+/* === HEADER === */
 header {
-  background-color: var(--light-green);
-  padding: 8px 40px; /* thinner header */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 98%;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5vw;
+    min-height: 85px;
+    width: 100%;
 }
-
 
 .logo-container {
     display: flex;
-    align-items: center; 
-    flex-shrink: 0; 
-    z-index: 30; 
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 30;
 }
 
 .logo-img {
-    height: 40px; 
-    width: auto; 
-    z-index: 20; 
-    vertical-align: middle; 
-}
-
-.logo-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.0em; 
-    color: var(--black); 
-    font-weight: 700; 
-    margin-left: 5px; 
-    position: relative; 
-    top: 0; 
+    height: 55px;
+    width: auto;
+    z-index: 20;
+    vertical-align: middle;
 }
 
 nav {
