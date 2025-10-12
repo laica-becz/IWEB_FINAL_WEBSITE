@@ -49,17 +49,15 @@ header {
 
 .logo-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-shrink: 0;
-    z-index: 30; 
+    z-index: 30;
 }
 
 .logo-img {
-    height: 10vw;
-    max-height: 65px;
-    min-height: 45px;
-    width: auto; 
-    z-index: 20; 
+    height: 55px;
+    width: auto;
+    z-index: 20;
     vertical-align: middle;
 }
 
