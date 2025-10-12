@@ -260,6 +260,36 @@ footer {
     color: var(--color-white);
 }
 
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--color-medium-green);
+    color: var(--color-white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: background 0.3s, opacity 0.3s;
+    border: none;
+    z-index: 1000;
+}
+
+.scroll-top img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.scroll-top:hover {
+    background: var(--color-dark-green);
+}
+
 /* === RESPONSIVE STYLES === */
 @media (max-width: 1024px) {
     .gallery {
@@ -303,6 +333,7 @@ footer {
         box-shadow: none;
     }
 }
+
 
 
 
