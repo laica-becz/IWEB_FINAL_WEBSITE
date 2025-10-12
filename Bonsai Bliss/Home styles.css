@@ -59,9 +59,9 @@ header {
 }
 
 nav {
-    flex-grow: 1; 
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -71,17 +71,16 @@ nav ul {
 }
 
 .nav-link {
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    color: var(--black); 
-    font-weight: 700; 
-    font-size: 1em; 
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 1em;
     transition: color 0.3s;
 }
 
 .nav-link.active,
 .nav-link:hover {
-    color: var(--white); 
+    color: var(--color-white);
 }
 
 .header-icons {
