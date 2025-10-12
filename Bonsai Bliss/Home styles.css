@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-/* === BODY === */
+/* BODY */
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-dark-green);
@@ -23,7 +23,7 @@ body {
     background-color: rgba(230, 230, 230, 0.5);
 }
 
-/* === HEADER & FOOTER CONTAINER === */
+/* HEADER & FOOTER CONTAINER */
 .designed-bar {
     max-width: 95vw;
     margin: 20px auto;
@@ -34,7 +34,7 @@ body {
     z-index: 10;
 }
 
-/* === HEADER === */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -87,7 +87,7 @@ nav ul {
     display: none;
 }
 
-/* === ICONS === */
+/* ICONS */
 .header-icons {
     display: flex;
     align-items: center;
@@ -122,7 +122,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 4rem 8%;
-    min-height: 85vh;
+    min-height: 70vh;
 }
 
 .content {
@@ -132,12 +132,12 @@ main {
 .content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
-    color: var(--dark-green);
+    color: var(--color-dark-green);
     margin-bottom: 1rem;
 }
 
 .content .highlight {
-    color: var(--medium-green);
+    color: var(--color-medium-green);
 }
 
 .content p {
@@ -161,13 +161,13 @@ main {
 }
 
 .primary {
-    background: var(--dark-green);
-    color: var(--white);
+    background: var(--color-dark-green);
+    color: var(--color-white);
 }
 
 .secondary {
-    background: var(--medium-green);
-    color: var(--white);
+    background: var(--color-medium-green);
+    color: var(--color-white);
 }
 
 .primary:hover,
