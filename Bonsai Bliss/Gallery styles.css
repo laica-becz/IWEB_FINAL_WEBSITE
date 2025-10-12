@@ -28,12 +28,11 @@ body {
 /* HEADER/FOOTER DESIGN OVERRIDE (for Desktop/Tablet look) This centers the header and footer bars and gives them a max-width.*/
 .designed-bar {
     max-width: 95vw;
-    margin-left: auto; 
-    margin-right: auto;
-    background-color: var(--color-light-green); 
+    margin: 20px auto;
+    background-color: var(--color-light-green);
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
-    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
     z-index: 10;
 }
 
