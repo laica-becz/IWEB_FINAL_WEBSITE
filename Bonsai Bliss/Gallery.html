@@ -7,15 +7,13 @@
   <link rel="stylesheet" href="Gallery styles.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
+  <header class="designed-bar">
+    <div class="logo-container">
       <img src="Logo.png" alt="bonsai logo">
-      <span>Bonsai Bliss</span>
-      <img src="menu-burger.png" alt="menu burger">
     </div>
 
     <!-- ===== NAVIGATION ===== -->
-    <nav>
+    <nav id="nav-menu">
       <ul>
         <li><a href="Home.html" class="nav-link">Home</a></li>
         <li><a href="Gallery.html" class="nav-link active">Gallery</a></li>
@@ -26,9 +24,7 @@
     </nav>
 
     <div class="header-icons">
-      <button class="icon-button menu-toggle-icon">
-        <img src="menu-burger.png" alt="Menu Icon">
-      </button>
+      <button class="menu-toggle-icon" id="menu-toggle">&#9776;</button>
     </div>
   </header>
 
@@ -99,16 +95,23 @@
   </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="designed-bar">
-    <p style="text-align:center; margin-top:15px;">Privacy Policy &nbsp; | &nbsp; Terms of Service</p>
-  </footer>
+  <footer>
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+  <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <img src="arrow.png" alt="Scroll to top">
+    </div>
 
   <script>
     // Toggle menu for mobile
-    const menuToggle = document.querySelector('.menu-toggle-icon');
-    const nav = document.querySelector('nav');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
     menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('menu-active');
+      navMenu.classList.toggle('active');
     });
 
     // Pagination button highlight
@@ -120,9 +123,36 @@
       });
     });
 
+    const scrollBtn = document.querySelector('.scroll-top');
+    const footer = document.querySelector('footer');
+    
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const footerRect = footer.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      if (scrollY > 300) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+      
+      const overlap = windowHeight - footerRect.top;
+      
+      if (overlap > 0) {
+        scrollBtn.style.bottom = `${overlap + 30}px`;
+      } else {
+        scrollBtn.style.bottom = '30px';
+      }
+    });
+    
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
+
 
 
 
