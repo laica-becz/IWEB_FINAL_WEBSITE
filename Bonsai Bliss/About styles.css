@@ -25,15 +25,12 @@ body {
     background-color: rgba(230, 230, 230, 0.5); 
 }
 
-/* DELETED .designed-bar CLASS - Styles merged into header and footer */
-
 
 /* --- HEADER/NAV STYLES --- */
 header {
-    /* COMBINED STYLES for all views (from original header and .designed-bar) */
-    background: var(--color-light-green); /* From .designed-bar */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* From your friend's code */
-    margin: 20px auto; /* Centers the header and adds top margin */
+    background: var(--color-light-green); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,9 +38,9 @@ header {
     min-height: 85px;
     position: relative;
     width: 100%;
-    max-width: 95vw; /* From .designed-bar */
-    border-radius: 5px; /* From .designed-bar */
-    z-index: 10; /* Ensures it stays above other elements */
+    max-width: 95vw; 
+    border-radius: 5px; 
+    z-index: 10; 
 }
 
 .logo-container {
@@ -52,7 +49,6 @@ header {
     flex-shrink: 0;
     z-index: 30; 
 }
-/* ... (rest of logo-container, logo-img, logo-text, nav, nav ul, etc. remains the same) ... */
 
 .logo-img {
     height: 55px; 
@@ -132,7 +128,7 @@ nav ul {
     padding: 50px 0 100px 0;
     min-height: calc(100vh - 50px);
 }
-/* ... (rest of the content styles remains the same) ... */
+
 
 .content-container {
     max-width: 80vw;
@@ -242,13 +238,13 @@ nav ul {
 /* --- FOOTER/QUOTE STYLES --- */
 footer {
     /* COMBINED STYLES for all views (from original footer and .designed-bar) */
-    background-color: var(--color-light-green); /* From .designed-bar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* From .designed-bar (using original shadow) */
-    max-width: 95vw; /* From .designed-bar */
-    border-radius: 5px; /* From .designed-bar */
-    position: relative; /* From .designed-bar */
-    z-index: 10; /* From .designed-bar */
-    margin: 0 auto 20px auto; /* Centers the footer and keeps bottom margin */
+    background-color: var(--color-light-green); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    max-width: 95vw; 
+    border-radius: 5px; 
+    position: relative; 
+    z-index: 10; 
+    margin: 0 auto 20px auto; 
 
     padding: 40px 0; 
     width: 100%;
@@ -270,9 +266,7 @@ footer {
     margin: 0 20px;
     line-height: 0; 
 }
-/* ... (rest of footer and media queries remain the same) ... */
 
-/* FIX: Sets the correct small size for the image icons in the footer */
 .icon-placeholder img {
     height: 25px;
     width: 25px;
@@ -305,12 +299,7 @@ footer {
 /* MOBILE LAYOUT (Max width 600px) */
 @media (max-width: 600px) {
 
-    /* >>> DELETED the conflicting 'header.designed-bar, footer.designed-bar' block. <<< */
-    
-    /* The header now automatically uses the boxed, rounded style from the global 'header' rule. */
-    
     header {
-        /* Remove the top margin on mobile so it snaps to the top */
         margin-top: 0; 
     }
 
@@ -402,7 +391,6 @@ footer {
     }
     
     footer {
-        /* Ensure footer uses the mobile-friendly margin from the new style */
         margin-bottom: 0;
     }
 }
