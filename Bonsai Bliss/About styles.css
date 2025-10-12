@@ -246,6 +246,7 @@ nav ul {
 
 /* --- FOOTER/QUOTE STYLES --- */
 footer {
+    /* Add margin to move footer up from the bottom of the viewport */
     margin-bottom: 20px;
     padding: 40px 0; 
     position: relative;
@@ -301,15 +302,6 @@ footer {
 
 /* MOBILE LAYOUT (Max width 600px) */
 @media (max-width: 600px) {
-
-
-    header.designed-bar,
-    footer.designed-bar {
-        border-radius: 0;
-        box-shadow: none; 
-        max-width: 100%; 
-        margin: 0; 
-    }
     
     /* Hide the leaf image  */
     .leaf-image {
@@ -401,5 +393,6 @@ footer {
     
     footer {
         margin-bottom: 0;
+        /* Remove desktop margin on mobile */
     }
 }
