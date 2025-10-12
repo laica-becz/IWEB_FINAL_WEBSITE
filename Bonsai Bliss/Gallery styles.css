@@ -152,7 +152,6 @@ nav ul {
 }
 
 .card {
-  background-color: var(--color-light-green);
   border-radius: 10px;
   text-align: center;
   padding: 20px;
@@ -277,6 +276,7 @@ footer {
         box-shadow: none;
     }
 }
+
 
 
 
