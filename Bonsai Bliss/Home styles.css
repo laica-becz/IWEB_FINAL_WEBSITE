@@ -83,12 +83,17 @@ nav ul {
     color: var(--color-white);
 }
 
+.icon-button{
+    display: none;
+}
+
+/* === ICONS === */
 .header-icons {
     display: flex;
     align-items: center;
     flex-shrink: 0;
     margin-left: 30px;
-    color: var(--dark-green); 
+    color: var(--color-dark-green);
 }
 
 .header-icons .icon-button {
@@ -97,7 +102,7 @@ nav ul {
     cursor: pointer;
     margin-left: 15px;
     padding: 0;
-    line-height: 0; 
+    line-height: 0;
 }
 
 .header-icons .icon-button img {
@@ -106,9 +111,9 @@ nav ul {
     vertical-align: middle;
 }
 
-/* Hides the hamburger icon by default (desktop view) */
+/* Hide hamburger icon by default */
 .menu-toggle-icon {
-    display: none; 
+    display: none;
 }
 
 /* MAIN CONTENT */
