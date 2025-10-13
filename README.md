@@ -9,15 +9,21 @@ Bonsai Bliss is an educational website that showcases the beauty of bonsai in di
 Typograhpy
 
 ● Playfair Display - Used for the name of the logo
+
 ● Hedvig Letters Serif – Used for headings, offering a sleek and modern look
+
 ● Monsterrat - Used for the body text (contents).
 
 Color
 
 ● Dark Green - #455B43
+
 ● Medium Green - #819067
+
 ● Light Green - #9CB380
+
 ● White - #FFFFFF
+
 ● Black - #000000
 
 Site Map/Diagram
