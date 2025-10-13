@@ -18,7 +18,6 @@ body {
     font-family: 'Montserrat', sans-serif; 
     color: var(--color-dark-green);
     min-height: 100vh;
-    /* ito ung background na papel */
     background: var(--color-white) url('Bonsai Bliss/bgpaper.jpg') no-repeat center center fixed;
     background-size: cover;
     background-blend-mode: multiply;
