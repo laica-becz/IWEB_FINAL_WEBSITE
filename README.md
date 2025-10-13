@@ -18,9 +18,9 @@ Color
 
 ● Dark Green - #455B43
 
-● Medium Green - #819067
+● Olive Green - #819067
 
-● Light Green - #9CB380
+● Soft Green - #9CB380
 
 ● White - #FFFFFF
 
