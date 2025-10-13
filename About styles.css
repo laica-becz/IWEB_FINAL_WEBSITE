@@ -19,7 +19,7 @@ body {
     color: var(--color-dark-green);
     min-height: 100vh;
     /* ito ung background na papel */
-    background: var(--color-white) url('bgpaper.jpg') no-repeat center center fixed;
+    background: var(--color-white) url('Bonsai Bliss/bgpaper.jpg') no-repeat center center fixed;
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(230, 230, 230, 0.5); 
