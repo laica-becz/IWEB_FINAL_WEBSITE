@@ -19,4 +19,5 @@ Color
 ● Black - #000000
 
 Site Map/Diagram
+
 <img width="614" height="256" alt="image" src="https://github.com/user-attachments/assets/492032ec-2af7-451d-b748-2f9bb53dbc84" />
